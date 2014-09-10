@@ -4,6 +4,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
+
         cssc: {
           build: {
             options: {
@@ -236,7 +237,7 @@ module.exports = function(grunt) {
     ]);
 
     grunt.registerTask('buildcss', [
-      'cssc',
+      //'cssc',
       'cssmin'
     ]);
 
